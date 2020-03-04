@@ -25,10 +25,16 @@ class Queue:
         self.__len_queue +=1
     
     def pop_queue(self):
-        item = self.__queue[0]
-        self.__queue.remove(0)
-        self.__len_queue -= 1
-        return item
+        if self.empty_queue() is True:
+            item = self.__queue[0]
+            self.__queue.remove(0)
+            self.__len_queue -= 1
+            return item
+        return print('A fila está vazia!!')
+        
     
-    
+    def empty_queue(self):
+        if len(self.__queue) == 0:
+            return False
+        return True
     
