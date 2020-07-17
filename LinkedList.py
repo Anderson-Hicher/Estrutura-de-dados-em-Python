@@ -201,7 +201,7 @@ class LinkedList:
             flag_remove = False
 
             # Verifica se a lista possui apenas um elemento
-            if self.first.getNext() == None:
+            if self.first.getNext() is None:
                 # Possui apenas um elemento,
                 # portanto removemos este elemento
                 self.first = None
@@ -258,7 +258,7 @@ class LinkedList:
             Se há conteúdo em lista retornará False
             senão retornará True.
         """
-        if self.first == None:
+        if self.first is None:
             return True
         return False
 
