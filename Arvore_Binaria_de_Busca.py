@@ -3,6 +3,7 @@
 @author: andersonhicher
 @email: hicherhp6@gmail.com
 @date: 16-07-2020
+@version: 0.1.0
 '''
 class Node:
 
